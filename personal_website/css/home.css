@@ -5,8 +5,13 @@
 }
 
 @font-face {
-  font-family: "leoscar";
-  src: url(../fonts/Leoscar_Sans_Serif.ttf);
+  font-family: "Helvetica_bold";
+  src: url(../fonts/Helvetica-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Helvetica_Oblique";
+  src: url(../fonts/Helvetica-Oblique.ttf);
 }
 
 body {
@@ -39,34 +44,18 @@ body {
   height: 100%;
 }
 
-.container .column .content h1 {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 100%;
-  background: rgba(0, 0, 0, 0.1);
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  color: rgba(255, 255, 255, 0.2);
-  font-size: 15em;
-  border-top: 2px solid rgba(0, 0, 0, 0.5);
-  border-bottom: 2px solid rgba(0, 0, 0, 0.5);
-}
-
 .container .column .content .box {
   position: absolute;
   height: 20%;
   width: 100%;
-  border-radius: 10px;
   top: 50%;
   transform: translateY(100%);
   box-sizing: border-box;
-  padding: 40px;
-  background: url(../images/label.png);
+  padding: 2%;
+  background-color: black;
   text-align: center;
   color: ghostwhite;
-  transition: 0.5%;
+  transition: 1s;
   opacity: 0;
 }
 
@@ -78,18 +67,15 @@ body {
   transform: translateY(-50%);
 }
 
-.container .column .content .box h2 {
+h2 {
   margin: 0;
   padding: 0;
   letter-spacing: 1px;
   text-align: center;
   justify-content: center;
-  font-size: 48px;
+  font-size: 5vw;
   color: #fff;
-  font-family: "leoscar", sans-serif;
-  text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777,
-    0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333,
-    0px 8px 7px #001135;
+  font-family: "Helvetica_bold";
 }
 
 .container .column .content .box p {
@@ -112,7 +98,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  transition: 0.5s;
+  transition: 3s;
 }
 
 .container .column.active .bg.bg2 {
@@ -120,7 +106,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  transition: 0.5s;
+  transition: 3s;
 }
 
 .container .column.active .bg.bg3 {
@@ -128,5 +114,5 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  transition: 0.5s;
+  transition: 3s;
 }
