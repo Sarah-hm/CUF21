@@ -1,14 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 @font-face {
-  font-family: 'leoscar';
+  font-family: "leoscar";
   src: url(../fonts/Leoscar_Sans_Serif.ttf);
 }
 
 body {
   margin: 0;
   padding: 0;
-
-  font font-family: sans-serif;
-
+  font-family: sans-serif;
 }
 
 .container {
@@ -17,11 +21,11 @@ body {
   overflow: hidden;
 }
 
-.container .column{
+.container .column {
   width: 33.3%;
   height: 100%;
   float: left;
-  border-right: 2px solid rgba(0,0,0,.5);
+  border-right: 2px solid rgba(0, 0, 0, 0.5);
   box-sizing: border-box;
   z-index: 1;
 }
@@ -40,14 +44,14 @@ body {
   top: 50%;
   transform: translateY(-50%);
   width: 100%;
-  background: rgba(0,0,0,.1);
+  background: rgba(0, 0, 0, 0.1);
   text-align: center;
   margin: 0;
   padding: 0;
-  color: rgba(255,255,255,.2);
+  color: rgba(255, 255, 255, 0.2);
   font-size: 15em;
-  border-top: 2px solid rgba(0,0,0,.5);
-  border-bottom: 2px solid rgba(0,0,0,.5);
+  border-top: 2px solid rgba(0, 0, 0, 0.5);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.5);
 }
 
 .container .column .content .box {
@@ -67,8 +71,7 @@ body {
 }
 
 .container .column .content .box .last {
-background-image: none;
-
+  background-image: none;
 }
 .container .column.active .content .box {
   opacity: 1;
@@ -83,17 +86,18 @@ background-image: none;
   justify-content: center;
   font-size: 48px;
   color: #fff;
-  font-family: 'leoscar', sans-serif;
-  text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333, 0px 8px 7px #001135;
+  font-family: "leoscar", sans-serif;
+  text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777,
+    0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333,
+    0px 8px 7px #001135;
 }
 
-
-.container .column .content .box p{
+.container .column .content .box p {
   color: #262626;
   font-size: 18px;
 }
 
-.container .column .bg{
+.container .column .bg {
   position: absolute;
   top: 0;
   left: 0;
@@ -103,7 +107,7 @@ background-image: none;
   z-index: -1;
 }
 
-.container .column.active .bg.bg1{
+.container .column.active .bg.bg1 {
   background: url(../images/networks.jpg);
   background-size: cover;
   background-attachment: fixed;
@@ -111,7 +115,7 @@ background-image: none;
   transition: 0.5s;
 }
 
-.container .column.active .bg.bg2{
+.container .column.active .bg.bg2 {
   background: url(../images/tangible.jpg);
   background-size: cover;
   background-attachment: fixed;
@@ -119,7 +123,7 @@ background-image: none;
   transition: 0.5s;
 }
 
-.container .column.active .bg.bg3{
+.container .column.active .bg.bg3 {
   background: url(../images/skin.jpg);
   background-size: cover;
   background-attachment: fixed;
