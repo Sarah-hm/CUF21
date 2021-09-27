@@ -52,7 +52,7 @@ body {
   transform: translateY(100%);
   box-sizing: border-box;
   padding: 2%;
-  background-color: black;
+  background-color: #00000075;
   text-align: center;
   color: ghostwhite;
   transition: 1s;
